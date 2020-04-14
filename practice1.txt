@@ -1,4 +1,13 @@
 Prompt #1: Painters
+Compose a function called paint() and then add it to three different painters. Each painter can only paint with one color. This should be the end result:
+
+> painter1.paints()
+"Paints green!"
+> painter2.paints()
+"Paints yellow!"
+> painter3.paints()
+"Paints red!"
+
 
 Painter
 paint(1 color)
@@ -9,17 +18,36 @@ const changeState = (prop) => {
     return (state) => ({
       ...state,
       [prop] : (state[value] || null )
-      [prop] : (state[prop] || null) + value
+      [prop] : `Paints ${state.color}!`
     })
   }
 }
+const makeColorGreen = changestate(color)(green)
+changestate(painter1)
 
-painter = {};
 
-const painter1 = changeState("green")(color)
 
-const paints = function() {
-  return `Paints ${state.color}!`
+const painter1 = { color: "green" };
+const painter2 = { color: "yellow" };
+const painter3 = { color: "red" };
+
+const p1 = changeState("green")(color)
+
+function whichPainter(painter) {
+  const paints = function() {
+    return `Paints ${painter.color}!`
+  }
+}
+
+const painter1 = whichPainter(p1);
+
+painter1.paints();
+>""string""
+
+function welcome(salutation) {
+  return function(yourName) {
+    return `${salutation}! Nice to meet you, ${yourName}!`
+  }
 }
 
 function paints() {
