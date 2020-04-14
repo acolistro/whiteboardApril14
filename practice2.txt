@@ -1,0 +1,62 @@
+prompt: create objects that return seperate sounds
+//writing functions to create those objects
+
+// const storeState = (initialState) => {
+  currentState = initialState;
+  return = (functionChangesState) => {
+    newState = functionChangesState(currentState)
+    currentState = {...newState}
+    return newState;
+  }
+// }
+
+// const initialState = { sound: "vroom"}
+
+// const mazda = storeState(initialState)
+
+
+const ObjectCreator = (state) => {
+  return = (prop) => {
+    return = (value) => {
+      state[prop]: (state[value] || null)
+    }
+  }
+}
+
+const carwithsound = objectCreator(car)(sound)
+
+const Mazda = carwithsound("vroom")
+
+Mazda = { sound: "vroom"}
+
+const prepObjectMakeSound = (object) =>
+{
+  return const sound = () => {
+    return `${state.sound}`
+  }
+}
+
+const RealMazda = prepObjectMakeSound(Mazda);
+RealMazda.sound()
+
+
+return:
+Mazda.sound()
+>"vroom"
+
+
+
+//setting instances of objects
+
+const initialState = { sound: "vroom"}
+
+const mazda = storeState(initialState)
+
+const car = 
+
+> faucet.sound()
+"Drip drip drip."
+> oldCar.sound()
+"Grumble grumble"
+> sleepyBear.sound()
+"Grrr...yawn"
