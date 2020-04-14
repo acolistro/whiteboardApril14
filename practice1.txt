@@ -1,0 +1,39 @@
+Prompt #1: Painters
+
+Painter
+paint(1 color)
+
+
+const changeState = (prop) => {
+  return (value) => {
+    return (state) => ({
+      ...state,
+      [prop] : (state[value] || null )
+      [prop] : (state[prop] || null) + value
+    })
+  }
+}
+
+painter = {};
+
+const painter1 = changeState("green")(color)
+
+const paints = function() {
+  return `Paints ${state.color}!`
+}
+
+function paints() {
+  return `Paints ${color}!`
+}
+
+Painter1.paints("green");
+> "Paints green!"
+Painter2.paints("blue");
+>"Paints blue!"
+
+> painter1.paints()
+"Paints green!"
+> painter2.paints()
+"Paints yellow!"
+> painter3.paints()
+"Paints red!"
